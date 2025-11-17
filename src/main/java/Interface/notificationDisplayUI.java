@@ -7,8 +7,8 @@ public class notificationDisplayUI extends Runnable{
 
     }
 
-    public void start() throws AWTException{
-        SystemTray tray = SystemTray.getSystemTray();
+    public void start(){
+        User32 us = new User32;
 
     }
 
