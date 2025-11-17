@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.GuilhermeMachado-ISEP</groupId>
+    <artifactId>notification-manager-analyser</artifactId>
+    <version>1.0.0</version>
+
+    <properties>
+            <java.version>17</java.version>
+            <project.sourceEncoding>UTF-8</project.sourceEncoding>
+            <project.build.sourceEncoding>${project.sourceEncoding}</project.build.sourceEncoding>
+            <project.reporting.outputEncoding>${project.sourceEncoding}</project.reporting.outputEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.sun</groupId>
+            <artifactId>jna</artifactId>
+            <version>3.0.9</version>
+        </dependency>
+    </dependencies>
+
+</project>
