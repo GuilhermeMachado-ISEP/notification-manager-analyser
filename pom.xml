@@ -1,31 +1,19 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" >
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.GuilhermeMachado-ISEP</groupId>
-    <artifactId>notification-manager-analyser</artifactId>
-    <version>1.0.0</version>
-
-    <properties>
-            <java.version>24</java.version>
-            <project.sourceEncoding>UTF-8</project.sourceEncoding>
-            <project.build.sourceEncoding>${project.sourceEncoding}</project.build.sourceEncoding>
-            <project.reporting.outputEncoding>${project.sourceEncoding}</project.reporting.outputEncoding>
-    </properties>
+    <groupId>com.example</groupId>
+    <artifactId>win-notify-listener</artifactId>
+    <version>0.1.0</version>
 
     <dependencies>
         <dependency>
             <groupId>net.java.dev.jna</groupId>
             <artifactId>jna</artifactId>
-            <version>5.13.0</version>
+            <version>5.18.1</version>
         </dependency>
         <dependency>
             <groupId>net.java.dev.jna</groupId>
             <artifactId>jna-platform</artifactId>
-            <version>5.13.0</version>
+            <version>5.18.1</version>
         </dependency>
     </dependencies>
-
 </project>
