@@ -1,5 +1,7 @@
 package Interface;
 
+import Domain.NotificationWatcher;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 

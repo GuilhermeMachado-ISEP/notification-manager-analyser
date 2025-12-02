@@ -31,24 +31,19 @@ public class NotificationWatcher {
         running = true;
 
         hookCallback = new User32.WinEventProc() {
-
             @Override
-            public void callback(WinNT.HANDLE hWinEventHook, WinDef.DWORD event, WinDef.HWND hwnd, WinDef.LONG idObject, WinDef.LONG idChild, WinDef.DWORD dwEventThread, WinDef.DWORD dwmsEventTime) {
-
-            }
-
-            public void callback(WinDef.HWINEVENTHOOK hWinEventHook,
-                                 int event,
+            public void callback(WinNT.HANDLE hWinEventHook,
+                                 WinDef.DWORD event,
                                  WinDef.HWND hwnd,
-                                 int idObject,
-                                 int idChild,
-                                 int dwEventThread,
-                                 int dwmsEventTime) {
+                                 WinDef.LONG idObject,
+                                 WinDef.LONG idChild,
+                                 WinDef.DWORD dwEventThread,
+                                 WinDef.DWORD dwmsEventTime) {
 
                 if (hwnd == null) return;
 
                 // Only window events
-                if (idObject != 0 || idChild != 0) return;
+                if (idObject.intValue() != 0 || idChild.intValue() != 0) return;
 
                 String className = getClassName(hwnd);
                 String windowText = getWindowText(hwnd);
